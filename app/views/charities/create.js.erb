@@ -1,0 +1,9 @@
+function searchAsso() {
+const URL = 'https://entreprise.data.gouv.fr/api/rna/v1/id/W9C1000188'
+
+fetch(URL, { method: 'GET'})
+    .then((response) => response.json())
+    .then((response) => console.log(response))
+    .catch((error) => console.error(error));
+
+}

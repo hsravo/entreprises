@@ -1,0 +1,12 @@
+<% if charity_signed_in? %>
+
+    <h1>Bienvenue, vous êtes connecté.e</h1>
+    <h2>Votre association :</h2>
+    <h3><%= @charity.name %></h3>
+
+<% else %>
+
+    <h1>Bienvenue sur Entreprise-Gouv</h1>
+    <h4>Connectez-vous ou inscrivez votre association pour accéder à la plateforme</h4>
+
+<% end %>
