@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
         devise_parameter_sanitizer.permit(:sign_up) {|u| u.permit(:name, :acronym, :id_association, :asso_infos, :email, :password, :password_confirmation)}
       end
       def configure_permitted_parameters
-        devise_parameter_sanitizer.permit(:account_update) {|u| u.permit(:asso_infos, :email, :password, :password_confirmation, :current_password)}
+        devise_parameter_sanitizer.permit(:account_update) {|u| u.permit(:name, :acronym, :id_association, :asso_infos, :email, :password, :password_confirmation, :current_password)}
       end
     
       add_flash_types :success, :danger
