@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2021_01_25_180500) do
     t.string "code_gestion"
     t.string "adresse_code_postal"
     t.string "adresse_libelle_commune"
-    t.string "date_creation"
+    t.date "date_creation"
     t.string "asso_infos", default: ""
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"

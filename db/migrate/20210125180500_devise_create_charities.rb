@@ -11,7 +11,7 @@ class DeviseCreateCharities < ActiveRecord::Migration[6.0]
       t.string :code_gestion
       t.string :adresse_code_postal
       t.string :adresse_libelle_commune
-      t.string :date_creation
+      t.date :date_creation
       t.string :asso_infos, default: ""
 
       ## Recoverable
