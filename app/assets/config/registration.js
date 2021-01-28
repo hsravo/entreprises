@@ -1,4 +1,4 @@
-function searchAsso() {
+const searchAsso = () => {
 
     let rna = document.getElementById("rna-field").value;
 
@@ -13,7 +13,7 @@ function searchAsso() {
 
 }
 
-function getInfo(response) {
+const getInfo = (response) => {
     const result = document.getElementById("rna-result");
     if (response !== undefined) {
         let title = response.titre;
@@ -29,7 +29,7 @@ function getInfo(response) {
     }
 }
 
-function fillFields(title, codegestion, codepostal, datecreation, ville) {
+const fillFields = (title, codegestion, codepostal, datecreation, ville) => {
     let name = document.getElementById("name-field");
     let codegest = document.getElementById("codegestion-field");
     let codepost = document.getElementById("codepostal-field");
