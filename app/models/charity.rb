@@ -1,7 +1,5 @@
 class Charity < ApplicationRecord
 
-  attr_accessor :login 
-
   validates :id_association, presence: { message: 'Le RNA doit être valide' }, uniqueness: { message: 'Le RNA est déjà utilisé' }
   validates :name, presence: { message: 'Le nom doit être renseigné ou est déjà utilisé' }, uniqueness: { message: 'Le nom est déjà utilisé' }
   validates :acronym, presence: { message: 'Le nom court doit être renseigné ou est déjà utilisé' }, uniqueness: { message: 'Le nom court est déjà utilisé' }
