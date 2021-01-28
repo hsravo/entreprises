@@ -13,13 +13,15 @@ function searchAsso() {
 
 }
 
-
 function getInfo(response) {
     const result = document.getElementById("rna-result");
     if (response !== undefined) {
         let title = response.titre;
-        let acronym = response.titre_court;
-        fillFields(title, acronym)
+        let codegestion = response.code_gestion;
+        let codepostal = response.adresse_code_postal;
+        let datecreation = response.date_creation;
+        let ville = response.adresse_libelle_commune;
+        fillFields(title, codegestion, codepostal, datecreation, ville)
         document.getElementById("rna-field").readOnly = true;
         result.innerHTML = `<h6 style="color:green;">RNA valide</h6>`;
     } else {
@@ -27,9 +29,15 @@ function getInfo(response) {
     }
 }
 
-function fillFields(title, acronym) {
+function fillFields(title, codegestion, codepostal, datecreation, ville) {
     let name = document.getElementById("name-field");
-    let shortname = document.getElementById("acronym-field");
+    let codegest = document.getElementById("codegestion-field");
+    let codepost = document.getElementById("codepostal-field");
+    let creadate = document.getElementById("date-field");
+    let creaville = document.getElementById("ville-field");
     name.value = title;
-    shortname.value = acronym;
+    codegest.value = codegestion;
+    codepost.value = codepostal;
+    creadate.value = datecreation;
+    creaville.value = ville;
 }

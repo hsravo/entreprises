@@ -22,9 +22,27 @@
     <%= f.text_field :name, autofocus: true, autocomplete: "Nom de l'association", id: "name-field", :readonly => true, class: "form-control"  %>
 </div>
 
-<div class="field">
-    <%= f.label :acronym, "Nom court" %><br />
-    <%= f.text_field :acronym, autofocus: true, autocomplete: "Nom court", id: "acronym-field", :readonly => true, class: "form-control"  %>
+<div class="row">
+    <div class="col-md-6">
+        <div class="field">
+            <%= f.label :code_gestion, "Code gestion" %><br />
+            <%= f.text_field :code_gestion, autofocus: true, autocomplete: "Nom court", id: "codegestion-field", :readonly => true, class: "form-control"  %>
+        </div>
+        <div class="field">
+            <%= f.label :adresse_code_postal, "Code postal" %><br />
+            <%= f.text_field :adresse_code_postal, autofocus: true, autocomplete: "Code postal", id: "codepostal-field", :readonly => true, class: "form-control"  %>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="field">
+            <%= f.label :date_creation, "Date de création" %><br />
+            <%= f.text_field :date_creation, autofocus: true, autocomplete: "Date de création", id: "date-field", :readonly => true, class: "form-control"  %>
+        </div>
+        <div class="field">
+            <%= f.label :adresse_libelle_commune, "Commune" %><br />
+            <%= f.text_field :adresse_libelle_commune, autofocus: true, autocomplete: "Commune", id: "ville-field", :readonly => true, class: "form-control"  %>
+        </div>
+    </div>
 </div>
 
 <div class="field">

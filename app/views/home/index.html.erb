@@ -1,12 +1,18 @@
 <% if charity_signed_in? %>
 
-    <h1>Bienvenue, vous êtes connecté.e</h1>
-    <h2>Votre association :</h2>
-    <h3><%= @charity.name %></h3>
+<h5>Bienvenue, vous êtes connecté.e</h5>
+<h2>Votre association :</h2>
+<h3><%= @charity.name %></h3>
+<h6>RNA : <%= @charity.id_association %></h6>
+<h6>Date de création : <%= @charity.date_creation %></h6>
+<h6>Code gestion : <%= @charity.code_gestion %></h6>
+<h6>Code postal : <%= @charity.adresse_code_postal %></h6>
+<h6>Commune : <%= @charity.adresse_libelle_commune %></h6>
+<h6>Infos association : <%= @charity.asso_infos %></h6>
 
 <% else %>
 
-    <h1>Bienvenue sur Entreprise-Gouv</h1>
-    <h4>Connectez-vous ou inscrivez votre association pour accéder à la plateforme</h4>
+<h1>Bienvenue sur Entreprise-Gouv</h1>
+<h4>Connectez-vous ou inscrivez votre association pour accéder à la plateforme</h4>
 
 <% end %>

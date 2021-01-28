@@ -6,9 +6,12 @@ class DeviseCreateCharities < ActiveRecord::Migration[6.0]
       ## Database authenticatable
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
-      t.string :name
-      t.string :acronym
       t.string :id_association
+      t.string :name
+      t.string :code_gestion
+      t.string :adresse_code_postal
+      t.string :adresse_libelle_commune
+      t.string :date_creation
       t.string :asso_infos, default: ""
 
       ## Recoverable
