@@ -1,24 +1,14 @@
-# README
+## EXERCICE TECHNIQUE RUBY ON RAILS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Petit exercice technique basé sur la création de compte et la connexion sur une App Ruby on Rails.
 
-Things you may want to cover:
+Ces deux fonctionnalités sont sécurisées grâce aux validations (Ruby on Rails), et une requête API (JavaScript ES6) réalisée via le lien suivant : https://entreprise.data.gouv.fr/api_doc/rna
 
-* Ruby version
+Mini-projet réalisé avec Ruby on Rails 6.0.3.4, Ruby 2.7.1 et JavaScript ES6
 
-* System dependencies
+Gems utilisées :
+- Devise
+- Table print
+- rspec-rails
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+hsravo
